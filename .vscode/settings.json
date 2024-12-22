@@ -1,0 +1,125 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "css.validate": false,
+  "editor.inlineSuggest.enabled": true,
+  "editor.fontFamily": "Fira Mono",
+
+  //"editor.fontLigatures": true,
+  //"editor.bracketPairColorization.enabled": true,
+  //"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+
+  "workbench.colorCustomizations": {
+    "editor.background": "#282a37"
+    // "editorBracketHighlight.foreground1": "#FEFEFE",
+    // "editorBracketHighlight.foreground2": "#FEFEFE",
+    // "editorBracketHighlight.foreground3": "#FEFEFE",
+    // "editorBracketHighlight.foreground4": "#FEFEFE",
+    // "editorBracketHighlight.foreground5": "#F464B6",
+  },
+
+  "editor.semanticTokenColorCustomizations": {
+    "enabled": true,
+    "rules": {
+      // Color for parameters that are declared (i.e., in the function signature)
+      "parameter.declaration": "#FFB55C",
+
+      // Color for parameters used elsewhere
+      "parameter": "#FEFEFE"
+    }
+  },
+
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": ["storage.type"],
+        "settings": {
+          "foreground": "#67ECFF", // const keyword
+          "fontStyle": "italic"
+        }
+      },
+
+      {
+        "scope": [
+          "entity.name.function",
+          "entity.other.attribute-name",
+          "meta.jsx.children"
+        ],
+        "settings": {
+          "foreground": "#00FF69" // function names like forwardRef
+        }
+      },
+      {
+        "scope": [
+          "entity.name.tag",
+          "keyword.operator.spread",
+          "punctuation.definition.string.template",
+          "punctuation.definition.template-expression.begin",
+          "punctuation.section.embedded.begin",
+          "punctuation.section.embedded.end"
+        ],
+        "settings": {
+          "foreground": "#F464B6" // JSX tag names like div
+        }
+      },
+      {
+        "scope": [
+          "variable.other.constant",
+          "punctuation.definition.tag",
+          "punctuation.definition.block"
+        ],
+        "settings": {
+          "foreground": "#FEFEFE" // const declarations
+        }
+      },
+      {
+        "scope": "constant.numeric",
+        "settings": {
+          "foreground": "#C58FFF",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": [
+          "string.quoted",
+          "string.template",
+          "meta.object-literal.key"
+        ],
+        "settings": {
+          "foreground": "#eefc7a",
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": "meta.jsx.children",
+        "settings": {
+          "foreground": "#FEFEFE",
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": ["entity.name.function"],
+        "settings": {
+          "foreground": "#67ECFF" // const keyword
+        }
+      },
+      {
+        "scope": ["keyword.operator.rest"],
+        "settings": {
+          "foreground": "#c2353a" // const keyword
+        }
+      }
+    ]
+  },
+  "editor.bracketPairColorization.enabled": false
+}
